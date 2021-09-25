@@ -46,8 +46,7 @@ const MemberList = ({ match }) => {
     <section className="py-5 container mt-5">
       <h3>Members Page</h3>
       <Link
-        //  to={`{/${path}/add}`}
-        to="member/add"
+        to="/members/add"
         className="btn btn-sm btn-primary mb-3"
       >
         Add Members

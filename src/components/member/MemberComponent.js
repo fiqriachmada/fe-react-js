@@ -27,19 +27,21 @@ const MemberComponent = ({
           <Card.Text>{status}</Card.Text>
         </Card.Body>
         <ButtonGroup aria-label="Basic example" className="">
-          <Link
+          {/* <Link
             to={`${path}/${memberId}`}
             className="btn btn-sm btn-outline-secondary"
           >
             Detail
-          </Link>
+          </Link> */}
 
-          <Link
-            to={`${path}/edit/${memberId}`}
-            className="btn btn-sm btn-outline-warning"
+          <button
+            // onClick={() => 
+            //   // handleDelete(memberId)
+            // }
+            className="btn btn-sm btn-primary"
           >
-            Update
-          </Link>
+            Status
+          </button>
 
           {/* {status > 0 || status === null ? (
             <button

@@ -63,7 +63,7 @@ const MemberForm = ({ history, match }) => {
       <Row className="col-lg-12 mt-5">
         <Card className="p-4 shadow-lg">
           <h3>Member Form Component</h3>
-          <Form>
+          <Form onSubmit={handleSubmit(submitForm)}>
             <Form.Group className="mb-3" controlId="formBasicFirstName">
               <Form.Label>First Name</Form.Label>
               <Form.Control
@@ -127,7 +127,9 @@ const MemberForm = ({ history, match }) => {
                 placeholder="Enter password"
                 name="password"
                 {...register("password")}
-                className={`form-control ${errors.password ? "is-invalid" : ""}`}
+                className={`form-control ${
+                  errors.password ? "is-invalid" : ""
+                }`}
               />
               <div className="invalid-feedback">{errors.password?.message}</div>
             </Form.Group>
