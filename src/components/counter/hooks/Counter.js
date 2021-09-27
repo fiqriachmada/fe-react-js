@@ -14,7 +14,7 @@ const Counter = () => {
 
   return (
     <Col className="mt-5">
-      <h1>{count}</h1>
+      <h1 data-testid="counter">{count}</h1>
       <button onClick={increment}></button>
       <button onClick={decrement}></button>
     </Col>
